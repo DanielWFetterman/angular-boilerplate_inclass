@@ -1,11 +1,26 @@
-.card {
+.wrapper .card {
     width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     border: 1px solid;
     padding: 10px;
     text-align: center;
+    align-items: flex-start;
+    background-color: white;
 }
-.details {
+
+.wrapper .card img {
+  width: 350px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.wrapper button {
+  border: 1px solid;
+  margin: 2 px;
+  padding: 10px;
+}
+
+.wrapper .card .btn-details{
   margin: 10 px;
   padding: 10px;
 }
@@ -14,20 +29,16 @@
   font-size: 12px;
 }
 
-.buttons {
-  display: block;
-}
 
-.buttons button:focus, 
-.buttons button:hover {
-  background-color: pink;
+.wrapper button:focus, button:hover {
+  background-color: green;
 }
 
 .buttons button:active {
   bakground-color: blue;
 }
 
-.button[data-toggle-btn] {
+.wrapper .buttons[data-toggle-btn] {
   padding: 10px;
   font-size: 15px;
   display: block;

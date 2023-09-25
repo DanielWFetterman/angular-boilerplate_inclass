@@ -11,13 +11,13 @@ document.querySelector('button[data-toggle-btn]').addEventListener('click', (e) 
 });
 
 //duplicate button
-document.querySelector('.duplicate').addEventListener('click', function(e) {
+document.querySelector('#dup-btn').addEventListener('click', function(e) {
   const cardToClone = document.querySelector('.card').cloneNode(true);
   document.body.appendChild(cardToClone);
 });
 
 //delete button
-document.querySelector('#deletecard').addEventListener('click', function(e) {
+document.querySelector('#del-btn').addEventListener('click', function(e) {
   let wantsTo = confirm("Are you sure?");
   if (wantsTo) {
     if (document.querySelector('.card:last-child') !== document.querySelector('.card')) {
@@ -30,7 +30,7 @@ document.querySelector('#deletecard').addEventListener('click', function(e) {
 });
 
 //change title button
-document.querySelector('.changetxt').addEventListener('click', function(e) {
+document.querySelector('.change-name-btn').addEventListener('click', function(e) {
   let name = "Something else";
   if (name) {
     document.querySelector('.card h3').innerText = name;
